@@ -53,20 +53,55 @@ class GestorPreguntas:
        # ---------- TXT ----------
     def cargar_desde_txt(self, ruta):
         preguntas = []
+
         with open(ruta, "r", encoding="cp1252") as f:
-            contenido = f.read()
+            lineas = [linea.strip() for linea in f if linea.strip()]
 
-        bloques = [b.strip() for b in contenido.split(SEPARADOR) if b.strip()]
-        for bloque in bloques:
-            datos = {}
-            for linea in bloque.splitlines():
-                if ":" not in linea:
-                    continue
-                clave, _, valor = linea.partition(":")
-                datos[clave.strip().lower()] = valor.strip()
+        i = 0
+        while i < len(lineas):
+            if lineas[i].startswith("PREGUNTA #"):
+                datos = {}
 
-            self._validar_datos(datos, origen=f"TXT ({ruta})")
-            preguntas.append(self._construir_pregunta(datos))
+                i += 1
+                while i < len(lineas) and not lineas[i].startswith("PREGUNTA #"):
+                    linea = lineas[i].strip()
+
+                    if linea.startswith("Tema:"):
+                        datos["tema"] = linea.split(":", 1)[1].strip()
+
+                    elif linea.startswith("Dificultad:"):
+                        datos["dificultad"] = linea.split(":", 1)[1].strip()
+
+                    elif linea.startswith("Enunciado:"):
+                        datos["pregunta"] = linea.split(":", 1)[1].strip()
+
+                    elif linea.startswith("A)"):
+                        datos["opcion_a"] = linea[2:].strip()
+
+                    elif linea.startswith("B)"):
+                        datos["opcion_b"] = linea[2:].strip()
+
+                    elif linea.startswith("C)"):
+                        datos["opcion_c"] = linea[2:].strip()
+
+                    elif linea.startswith("D)"):
+                        datos["opcion_d"] = linea[2:].strip()
+
+                    elif "correcta" in linea.lower():
+                        if ":" in linea:
+                            valor = linea.split(":", 1)[1].strip().upper()
+                            if valor in ("A", "B", "C", "D"):
+                                datos["respuesta_correcta"] = valor
+
+                    i += 1
+
+                print("DATOS EXTRAIDOS:", datos)  # temporal para depurar
+
+                self._validar_datos(datos, origen=f"TXT ({ruta})")
+                preguntas.append(self._construir_pregunta(datos))
+            else:
+                i += 1
+
         return preguntas
     # ---------- JSON ----------
     def cargar_desde_json(self, ruta):

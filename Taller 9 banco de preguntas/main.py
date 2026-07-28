@@ -1,27 +1,56 @@
+from pathlib import Path
 from src.dao import PreguntaDAO
-from src.entidad import Pregunta
+from src.gestor import GestorPreguntas
+from src.simulador import Simulador
 
-def probar_conexion():
-    print("Probando conexión con la base de datos...")
-    dao = PreguntaDAO("banco_preguntas.db")
-    print("Conexión exitosa. Tabla 'preguntas' verificada/creada.")
 
-    pregunta_prueba = Pregunta(
-        pregunta="¿Qué función abre un archivo en Python?",
-        opcion_a="open()", opcion_b="file()", opcion_c="read()", opcion_d="load()",
-        respuesta_correcta="A", dificultad="Fácil", tema="Manejo de archivos"
-    )
-    id_generado = dao.insertar(pregunta_prueba)
-    print(f"Pregunta de prueba insertada con id={id_generado}")
+def main():
+    print("SISTEMA DE BANCO DE PREGUNTAS")
 
-    encontrada = dao.obtener_por_id(id_generado)
-    print("Pregunta recuperada desde la BD:")
-    print(encontrada)
+    base_dir = Path(__file__).resolve().parent
 
-    total = len(dao.obtener_todas())
-    print(f"Total de preguntas en la base de datos: {total}")
+    ruta_db = base_dir / "banco_preguntas.db"
+    ruta_txt = base_dir / "PREGUNTAS_PYTHON.TXT"
+
+    print("\nConectando con la base de datos...")
+    dao = PreguntaDAO(str(ruta_db))
+    gestor = GestorPreguntas(dao=dao)
+    print("Conexión exitosa.")
+
+    print("\nCargando preguntas desde archivo TXT...")
+    preguntas = gestor.cargar_desde_txt(str(ruta_txt))
+    print(f"Preguntas cargadas desde el archivo: {len(preguntas)}")
+
+    print("\nGuardando preguntas en la base de datos...")
+    gestor.guardar_en_base_datos(preguntas)
+
+    total_bd = len(dao.obtener_todas())
+    print(f"Total de preguntas en la base de datos: {total_bd}")
+
+    print("\nExportando preguntas desde la base de datos...")
+    gestor.exportar_a_txt(str(base_dir / "preguntas_exportadas.txt"))
+    gestor.exportar_a_csv(str(base_dir / "preguntas_exportadas.csv"))
+    gestor.exportar_a_json(str(base_dir / "preguntas_exportadas.json"))
+
+    print("\nEstadísticas por tema")
+    gestor.estadisticas_por_tema()
+
+    print("\nEstadísticas por dificultad")
+    gestor.estadisticas_por_dificultad()
+
+    print("\nSIMULADOR DE EVALUACIÓN")
+    preguntas_bd = dao.obtener_todas()
+
+    simulador = Simulador(preguntas_bd)
+
+    try:
+        cantidad = int(input("¿Cuántas preguntas deseas responder? "))
+    except ValueError:
+        cantidad = 5
+        print("Entrada inválida. Se usarán 5 preguntas por defecto.")
+
+    simulador.iniciar_simulacion(cantidad)
+
+
 if __name__ == "__main__":
-    probar_conexion()   
-
-   #1
-   
+    main()

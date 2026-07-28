@@ -1,0 +1,542 @@
+[
+    {
+        "pregunta": "¿Qué función abre un archivo en Python?",
+        "opcion_a": "open()",
+        "opcion_b": "file()",
+        "opcion_c": "read()",
+        "opcion_d": "load()",
+        "respuesta_correcta": "A",
+        "dificultad": "Fácil",
+        "tema": "Manejo de archivos"
+    },
+    {
+        "pregunta": "¿Qué función abre un archivo en Python?",
+        "opcion_a": "open()",
+        "opcion_b": "file()",
+        "opcion_c": "read()",
+        "opcion_d": "load()",
+        "respuesta_correcta": "A",
+        "dificultad": "Fácil",
+        "tema": "Manejo de archivos"
+    },
+    {
+        "pregunta": "¿Qué función abre un archivo en Python?",
+        "opcion_a": "open()",
+        "opcion_b": "file()",
+        "opcion_c": "read()",
+        "opcion_d": "load()",
+        "respuesta_correcta": "A",
+        "dificultad": "Fácil",
+        "tema": "Manejo de archivos"
+    },
+    {
+        "pregunta": "¿Qué función abre un archivo en Python?",
+        "opcion_a": "open()",
+        "opcion_b": "file()",
+        "opcion_c": "read()",
+        "opcion_d": "load()",
+        "respuesta_correcta": "A",
+        "dificultad": "Fácil",
+        "tema": "Manejo de archivos"
+    },
+    {
+        "pregunta": "¿Cuál es la salida de print(5 // 2)?",
+        "opcion_a": "2.5",
+        "opcion_b": "2",
+        "opcion_c": "3",
+        "opcion_d": "2.0",
+        "respuesta_correcta": "B",
+        "dificultad": "Fácil",
+        "tema": "Operadores Aritméticos"
+    },
+    {
+        "pregunta": "¿Qué función obtiene la longitud de una lista?",
+        "opcion_a": "size()",
+        "opcion_b": "length()",
+        "opcion_c": "len()",
+        "opcion_d": "count()",
+        "respuesta_correcta": "C",
+        "dificultad": "Fácil",
+        "tema": "Funciones Built-in"
+    },
+    {
+        "pregunta": "¿Cuál es el resultado de 3 ** 2?",
+        "opcion_a": "6",
+        "opcion_b": "8",
+        "opcion_c": "9",
+        "opcion_d": "12",
+        "respuesta_correcta": "C",
+        "dificultad": "Fácil",
+        "tema": "Operadores Aritméticos"
+    },
+    {
+        "pregunta": "¿Qué método agrega un elemento al final de una lista?",
+        "opcion_a": "add()",
+        "opcion_b": "append()",
+        "opcion_c": "insert()",
+        "opcion_d": "push()",
+        "respuesta_correcta": "B",
+        "dificultad": "Fácil",
+        "tema": "Listas"
+    },
+    {
+        "pregunta": "¿Cuál es la salida de for i in range(3): print(i, end=' ')?",
+        "opcion_a": "0 1 2",
+        "opcion_b": "1 2 3",
+        "opcion_c": "0 1 2 3",
+        "opcion_d": "1 2 3 4",
+        "respuesta_correcta": "A",
+        "dificultad": "Media",
+        "tema": "Bucles"
+    },
+    {
+        "pregunta": "¿Qué palabra clave define una función?",
+        "opcion_a": "function",
+        "opcion_b": "def",
+        "opcion_c": "define",
+        "opcion_d": "func",
+        "respuesta_correcta": "B",
+        "dificultad": "Fácil",
+        "tema": "Funciones"
+    },
+    {
+        "pregunta": "¿Cuál es la salida de lista[1]=5 en [1,2,3]?",
+        "opcion_a": "[1,2,3]",
+        "opcion_b": "[5,2,3]",
+        "opcion_c": "[1,5,3]",
+        "opcion_d": "Error",
+        "respuesta_correcta": "C",
+        "dificultad": "Media",
+        "tema": "Listas"
+    },
+    {
+        "pregunta": "¿Qué hace el operador 'is'?",
+        "opcion_a": "Compara valores",
+        "opcion_b": "Compara identidad",
+        "opcion_c": "Compara tipos",
+        "opcion_d": "Compara igualdad",
+        "respuesta_correcta": "B",
+        "dificultad": "Media",
+        "tema": "Operadores de Identidad"
+    },
+    {
+        "pregunta": "¿Cómo se crea un diccionario?",
+        "opcion_a": "{1,2,3}",
+        "opcion_b": "[1,2,3]",
+        "opcion_c": "{'nombre': 'Juan'}",
+        "opcion_d": "('nombre','Juan')",
+        "respuesta_correcta": "C",
+        "dificultad": "Fácil",
+        "tema": "Diccionarios"
+    },
+    {
+        "pregunta": "¿Qué función lee entrada del usuario?",
+        "opcion_a": "read()",
+        "opcion_b": "input()",
+        "opcion_c": "scan()",
+        "opcion_d": "get()",
+        "respuesta_correcta": "B",
+        "dificultad": "Fácil",
+        "tema": "Entrada/Salida"
+    },
+    {
+        "pregunta": "¿Cuál es la salida de bool([])?",
+        "opcion_a": "True",
+        "opcion_b": "False",
+        "opcion_c": "Error",
+        "opcion_d": "None",
+        "respuesta_correcta": "B",
+        "dificultad": "Media",
+        "tema": "Tipos de Datos"
+    },
+    {
+        "pregunta": "¿Qué método elimina el último elemento de una lista?",
+        "opcion_a": "remove()",
+        "opcion_b": "pop()",
+        "opcion_c": "delete()",
+        "opcion_d": "discard()",
+        "respuesta_correcta": "B",
+        "dificultad": "Media",
+        "tema": "Listas"
+    },
+    {
+        "pregunta": "¿Cuál es el resultado de 'Hola' * 2?",
+        "opcion_a": "'HolaHola'",
+        "opcion_b": "'Hola2'",
+        "opcion_c": "Error",
+        "opcion_d": "'Hola Hola'",
+        "respuesta_correcta": "A",
+        "dificultad": "Fácil",
+        "tema": "Strings"
+    },
+    {
+        "pregunta": "¿Qué palabra clave se usa para manejar excepciones?",
+        "opcion_a": "try",
+        "opcion_b": "catch",
+        "opcion_c": "except",
+        "opcion_d": "throw",
+        "respuesta_correcta": "A",
+        "dificultad": "Media",
+        "tema": "Manejo de Errores"
+    },
+    {
+        "pregunta": "¿Cuál es la salida de len(range(5))?",
+        "opcion_a": "4",
+        "opcion_b": "5",
+        "opcion_c": "6",
+        "opcion_d": "Error",
+        "respuesta_correcta": "B",
+        "dificultad": "Media",
+        "tema": "Funciones Built-in"
+    },
+    {
+        "pregunta": "¿Cómo se accede al primer elemento de una lista llamada 'datos'?",
+        "opcion_a": "datos[0]",
+        "opcion_b": "datos[1]",
+        "opcion_c": "datos.first()",
+        "opcion_d": "datos[0:]",
+        "respuesta_correcta": "A",
+        "dificultad": "Fácil",
+        "tema": "Listas"
+    },
+    {
+        "pregunta": "¿Qué función convierte un string a entero?",
+        "opcion_a": "str()",
+        "opcion_b": "int()",
+        "opcion_c": "float()",
+        "opcion_d": "char()",
+        "respuesta_correcta": "B",
+        "dificultad": "Fácil",
+        "tema": "Conversión de Tipos"
+    },
+    {
+        "pregunta": "¿Cuál es la salida de print(10 % 3)?",
+        "opcion_a": "1",
+        "opcion_b": "3",
+        "opcion_c": "0",
+        "opcion_d": "2",
+        "respuesta_correcta": "A",
+        "dificultad": "Fácil",
+        "tema": "Operadores Aritméticos"
+    },
+    {
+        "pregunta": "¿Qué método convierte una lista en un string?",
+        "opcion_a": "join()",
+        "opcion_b": "split()",
+        "opcion_c": "concat()",
+        "opcion_d": "merge()",
+        "respuesta_correcta": "A",
+        "dificultad": "Media",
+        "tema": "Strings"
+    },
+    {
+        "pregunta": "¿Cuál es la salida de type([])?",
+        "opcion_a": "list",
+        "opcion_b": "array",
+        "opcion_c": "tuple",
+        "opcion_d": "dict",
+        "respuesta_correcta": "A",
+        "dificultad": "Fácil",
+        "tema": "Tipos de Datos"
+    },
+    {
+        "pregunta": "¿Qué operador se usa para concatenar strings?",
+        "opcion_a": "+",
+        "opcion_b": "&",
+        "opcion_c": ".",
+        "opcion_d": "*",
+        "respuesta_correcta": "A",
+        "dificultad": "Fácil",
+        "tema": "Strings"
+    },
+    {
+        "pregunta": "¿Cuál es la salida de 'Python'[0]?",
+        "opcion_a": "P",
+        "opcion_b": "y",
+        "opcion_c": "t",
+        "opcion_d": "h",
+        "respuesta_correcta": "A",
+        "dificultad": "Fácil",
+        "tema": "Strings"
+    },
+    {
+        "pregunta": "¿Qué método cuenta las ocurrencias de un elemento en una lista?",
+        "opcion_a": "count()",
+        "opcion_b": "len()",
+        "opcion_c": "size()",
+        "opcion_d": "total()",
+        "respuesta_correcta": "A",
+        "dificultad": "Media",
+        "tema": "Listas"
+    },
+    {
+        "pregunta": "¿Cuál es la salida de 5 == 5.0?",
+        "opcion_a": "True",
+        "opcion_b": "False",
+        "opcion_c": "Error",
+        "opcion_d": "None",
+        "respuesta_correcta": "A",
+        "dificultad": "Media",
+        "tema": "Comparaciones"
+    },
+    {
+        "pregunta": "¿Qué palabra clave se usa para crear una clase?",
+        "opcion_a": "class",
+        "opcion_b": "object",
+        "opcion_c": "def",
+        "opcion_d": "struct",
+        "respuesta_correcta": "A",
+        "dificultad": "Fácil",
+        "tema": "Programación Orientada a Objetos"
+    },
+    {
+        "pregunta": "¿Cuál es la salida de print(2 * 3 + 4)?",
+        "opcion_a": "10",
+        "opcion_b": "14",
+        "opcion_c": "12",
+        "opcion_d": "16",
+        "respuesta_correcta": "A",
+        "dificultad": "Fácil",
+        "tema": "Operadores Aritméticos"
+    },
+    {
+        "pregunta": "¿Cómo se comenta una línea en Python?",
+        "opcion_a": "//",
+        "opcion_b": "#",
+        "opcion_c": "/*",
+        "opcion_d": "--",
+        "respuesta_correcta": "B",
+        "dificultad": "Fácil",
+        "tema": "Sintaxis Básica"
+    },
+    {
+        "pregunta": "¿Qué método ordena una lista?",
+        "opcion_a": "sort()",
+        "opcion_b": "order()",
+        "opcion_c": "arrange()",
+        "opcion_d": "sorted()",
+        "respuesta_correcta": "A",
+        "dificultad": "Media",
+        "tema": "Listas"
+    },
+    {
+        "pregunta": "¿Cuál es la salida de bool('')?",
+        "opcion_a": "True",
+        "opcion_b": "False",
+        "opcion_c": "Error",
+        "opcion_d": "None",
+        "respuesta_correcta": "B",
+        "dificultad": "Media",
+        "tema": "Tipos de Datos"
+    },
+    {
+        "pregunta": "¿Qué función devuelve el valor absoluto de un número?",
+        "opcion_a": "abs()",
+        "opcion_b": "absolute()",
+        "opcion_c": "mod()",
+        "opcion_d": "pos()",
+        "respuesta_correcta": "A",
+        "dificultad": "Fácil",
+        "tema": "Funciones Built-in"
+    },
+    {
+        "pregunta": "¿Cuál es la salida de len('Python')?",
+        "opcion_a": "5",
+        "opcion_b": "6",
+        "opcion_c": "7",
+        "opcion_d": "8",
+        "respuesta_correcta": "B",
+        "dificultad": "Fácil",
+        "tema": "Strings"
+    },
+    {
+        "pregunta": "¿Cómo se declara una variable en Python?",
+        "opcion_a": "var x = 5",
+        "opcion_b": "x = 5",
+        "opcion_c": "int x = 5",
+        "opcion_d": "$x = 5",
+        "respuesta_correcta": "B",
+        "dificultad": "Fácil",
+        "tema": "Variables"
+    },
+    {
+        "pregunta": "¿Cuál es la salida de max([1,5,3])?",
+        "opcion_a": "1",
+        "opcion_b": "3",
+        "opcion_c": "5",
+        "opcion_d": "8",
+        "respuesta_correcta": "C",
+        "dificultad": "Fácil",
+        "tema": "Funciones Built-in"
+    },
+    {
+        "pregunta": "¿Qué método elimina un elemento por su valor?",
+        "opcion_a": "remove()",
+        "opcion_b": "pop()",
+        "opcion_c": "delete()",
+        "opcion_d": "discard()",
+        "respuesta_correcta": "A",
+        "dificultad": "Media",
+        "tema": "Listas"
+    },
+    {
+        "pregunta": "¿Cuál es la salida de print(2 ** 3)?",
+        "opcion_a": "6",
+        "opcion_b": "8",
+        "opcion_c": "9",
+        "opcion_d": "12",
+        "respuesta_correcta": "B",
+        "dificultad": "Fácil",
+        "tema": "Operadores Aritméticos"
+    },
+    {
+        "pregunta": "¿Qué función devuelve el número de elementos de un objeto?",
+        "opcion_a": "len()",
+        "opcion_b": "count()",
+        "opcion_c": "size()",
+        "opcion_d": "length()",
+        "respuesta_correcta": "A",
+        "dificultad": "Fácil",
+        "tema": "Funciones Built-in"
+    },
+    {
+        "pregunta": "¿Cuál es la salida de bool([1,2,3])?",
+        "opcion_a": "True",
+        "opcion_b": "False",
+        "opcion_c": "Error",
+        "opcion_d": "None",
+        "respuesta_correcta": "A",
+        "dificultad": "Media",
+        "tema": "Tipos de Datos"
+    },
+    {
+        "pregunta": "¿Cómo se accede al último elemento de una lista?",
+        "opcion_a": "lista[-1]",
+        "opcion_b": "lista[último]",
+        "opcion_c": "lista[-2]",
+        "opcion_d": "lista[0]",
+        "respuesta_correcta": "A",
+        "dificultad": "Media",
+        "tema": "Listas"
+    },
+    {
+        "pregunta": "¿Qué operador se usa para comparar si dos valores son iguales?",
+        "opcion_a": "=",
+        "opcion_b": "==",
+        "opcion_c": "===",
+        "opcion_d": "!=",
+        "respuesta_correcta": "B",
+        "dificultad": "Fácil",
+        "tema": "Operadores de Comparación"
+    },
+    {
+        "pregunta": "¿Cuál es la salida de 'Python'[::-1]?",
+        "opcion_a": "'nohtyP'",
+        "opcion_b": "'Python'",
+        "opcion_c": "'noht yP'",
+        "opcion_d": "'Pyt hon'",
+        "respuesta_correcta": "A",
+        "dificultad": "Media",
+        "tema": "Strings"
+    },
+    {
+        "pregunta": "¿Qué función convierte un número a string?",
+        "opcion_a": "str()",
+        "opcion_b": "int()",
+        "opcion_c": "float()",
+        "opcion_d": "char()",
+        "respuesta_correcta": "A",
+        "dificultad": "Fácil",
+        "tema": "Conversión de Tipos"
+    },
+    {
+        "pregunta": "¿Cuál es la salida de 7 // 3?",
+        "opcion_a": "2",
+        "opcion_b": "2.33",
+        "opcion_c": "3",
+        "opcion_d": "2.0",
+        "respuesta_correcta": "A",
+        "dificultad": "Fácil",
+        "tema": "Operadores Aritméticos"
+    },
+    {
+        "pregunta": "¿Cómo se crea una tupla?",
+        "opcion_a": "(1,2,3)",
+        "opcion_b": "[1,2,3]",
+        "opcion_c": "{1,2,3}",
+        "opcion_d": "[1,2,3]",
+        "respuesta_correcta": "A",
+        "dificultad": "Fácil",
+        "tema": "Tuplas"
+    },
+    {
+        "pregunta": "¿Qué método agrega todos los elementos de una lista a otra?",
+        "opcion_a": "extend()",
+        "opcion_b": "append()",
+        "opcion_c": "add()",
+        "opcion_d": "merge()",
+        "respuesta_correcta": "A",
+        "dificultad": "Media",
+        "tema": "Listas"
+    },
+    {
+        "pregunta": "¿Cuál es la salida de sum([1,2,3])?",
+        "opcion_a": "5",
+        "opcion_b": "6",
+        "opcion_c": "7",
+        "opcion_d": "8",
+        "respuesta_correcta": "B",
+        "dificultad": "Fácil",
+        "tema": "Funciones Built-in"
+    },
+    {
+        "pregunta": "¿Qué palabra clave se usa para salir de un bucle?",
+        "opcion_a": "exit",
+        "opcion_b": "break",
+        "opcion_c": "continue",
+        "opcion_d": "return",
+        "respuesta_correcta": "B",
+        "dificultad": "Fácil",
+        "tema": "Bucles"
+    },
+    {
+        "pregunta": "¿Cuál es la salida de 'Python'[1:4]?",
+        "opcion_a": "yth",
+        "opcion_b": "Pyt",
+        "opcion_c": "hon",
+        "opcion_d": "ytho",
+        "respuesta_correcta": "A",
+        "dificultad": "Media",
+        "tema": "Strings"
+    },
+    {
+        "pregunta": "¿Qué operador verifica si un elemento está en una lista?",
+        "opcion_a": "in",
+        "opcion_b": "has",
+        "opcion_c": "contains",
+        "opcion_d": "inside",
+        "respuesta_correcta": "A",
+        "dificultad": "Fácil",
+        "tema": "Operadores de Pertenencia"
+    },
+    {
+        "pregunta": "¿Cuál es la salida de print(round(3.7))?",
+        "opcion_a": "3",
+        "opcion_b": "4",
+        "opcion_c": "3.5",
+        "opcion_d": "4.0",
+        "respuesta_correcta": "B",
+        "dificultad": "Fácil",
+        "tema": "Funciones Built-in"
+    },
+    {
+        "pregunta": "¿Qué método convierte un string a lista de caracteres?",
+        "opcion_a": "list()",
+        "opcion_b": "split()",
+        "opcion_c": "char()",
+        "opcion_d": "toList()",
+        "respuesta_correcta": "A",
+        "dificultad": "Media",
+        "tema": "Conversión de Tipos"
+    }
+]
