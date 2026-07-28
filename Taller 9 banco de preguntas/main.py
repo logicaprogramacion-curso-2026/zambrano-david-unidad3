@@ -21,5 +21,7 @@ def probar_conexion():
     total = len(dao.obtener_todas())
     print(f"Total de preguntas en la base de datos: {total}")
 if __name__ == "__main__":
-    probar_conexion()
+    probar_conexion()   
+
+   #1
    

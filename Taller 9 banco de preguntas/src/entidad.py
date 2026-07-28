@@ -1,5 +1,5 @@
 """
-Módulo: entidad.py
+Módulo: entidad.py   lol 
 Define la clase Pregunta, que representa una pregunta de selección
 múltiple dentro del banco de preguntas.
 """
