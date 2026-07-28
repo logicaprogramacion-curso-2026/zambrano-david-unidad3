@@ -50,11 +50,10 @@ class GestorPreguntas:
             respuesta_correcta=datos["respuesta_correcta"],
             dificultad=datos["dificultad"], tema=datos["tema"],
         )
-
-    # ---------- TXT ----------
+       # ---------- TXT ----------
     def cargar_desde_txt(self, ruta):
         preguntas = []
-        with open(ruta, "r", encoding="utf-8") as f:
+        with open(ruta, "r", encoding="cp1252") as f:
             contenido = f.read()
 
         bloques = [b.strip() for b in contenido.split(SEPARADOR) if b.strip()]
@@ -69,17 +68,6 @@ class GestorPreguntas:
             self._validar_datos(datos, origen=f"TXT ({ruta})")
             preguntas.append(self._construir_pregunta(datos))
         return preguntas
-
-    # ---------- CSV ----------
-    def cargar_desde_csv(self, ruta):
-        preguntas = []
-        with open(ruta, "r", encoding="utf-8", newline="") as f:
-            lector = csv.DictReader(f)
-            for fila in lector:
-                self._validar_datos(fila, origen=f"CSV ({ruta})")
-                preguntas.append(self._construir_pregunta(fila))
-        return preguntas
-
     # ---------- JSON ----------
     def cargar_desde_json(self, ruta):
         with open(ruta, "r", encoding="utf-8") as f:
