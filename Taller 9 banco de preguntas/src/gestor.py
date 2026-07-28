@@ -6,6 +6,7 @@ desde archivos (TXT, CSV, JSON) y convertirlas en objetos Pregunta.
 import csv
 import json
 from src.entidad import Pregunta
+from collections import Counter
 
 SEPARADOR = "-" * 40
 
@@ -89,3 +90,75 @@ class GestorPreguntas:
             self._validar_datos(item, origen=f"JSON ({ruta})")
             preguntas.append(self._construir_pregunta(item))
         return preguntas
+    # ---------- BASE DE DATOS ----------
+    def guardar_en_base_datos(self, preguntas):
+        if self.dao is None:
+            raise ValueError("No se ha configurado un DAO para guardar en la base de datos.")
+
+        contador = 0
+        for pregunta in preguntas:
+            self.dao.insertar(pregunta)
+            contador += 1
+        print(f"Se guardaron {contador} preguntas en la base de datos.")
+
+
+    # ---------- EXPORTACIÓN ----------
+    def exportar_a_txt(self, ruta="preguntas_exportadas.txt"):
+        preguntas = self.dao.obtener_todas()
+        with open(ruta, "w", encoding="utf-8") as f:
+            for p in preguntas:
+                f.write(f"pregunta: {p.pregunta}\n")
+                f.write(f"opcion_a: {p.opcion_a}\n")
+                f.write(f"opcion_b: {p.opcion_b}\n")
+                f.write(f"opcion_c: {p.opcion_c}\n")
+                f.write(f"opcion_d: {p.opcion_d}\n")
+                f.write(f"respuesta_correcta: {p.respuesta_correcta}\n")
+                f.write(f"dificultad: {p.dificultad}\n")
+                f.write(f"tema: {p.tema}\n")
+                f.write(SEPARADOR + "\n")
+        print(f"Exportación a TXT completada: {ruta}")
+
+
+    def exportar_a_csv(self, ruta="preguntas_exportadas.csv"):
+        preguntas = self.dao.obtener_todas()
+        with open(ruta, "w", newline="", encoding="utf-8") as f:
+            writer = csv.DictWriter(f, fieldnames=CAMPOS_OBLIGATORIOS)
+            writer.writeheader()
+            for p in preguntas:
+                writer.writerow({
+                    "pregunta": p.pregunta, "opcion_a": p.opcion_a,
+                    "opcion_b": p.opcion_b, "opcion_c": p.opcion_c,
+                    "opcion_d": p.opcion_d, "respuesta_correcta": p.respuesta_correcta,
+                    "dificultad": p.dificultad, "tema": p.tema,
+                })
+        print(f"Exportación a CSV completada: {ruta}")
+
+
+    def exportar_a_json(self, ruta="preguntas_exportadas.json"):
+        preguntas = self.dao.obtener_todas()
+        datos = [{
+            "pregunta": p.pregunta, "opcion_a": p.opcion_a,
+            "opcion_b": p.opcion_b, "opcion_c": p.opcion_c,
+            "opcion_d": p.opcion_d, "respuesta_correcta": p.respuesta_correcta,
+            "dificultad": p.dificultad, "tema": p.tema,
+        } for p in preguntas]
+        with open(ruta, "w", encoding="utf-8") as f:
+            json.dump(datos, f, ensure_ascii=False, indent=4)
+        print(f"Exportación a JSON completada: {ruta}")
+
+
+    # ---------- ESTADÍSTICAS ----------
+    def estadisticas_por_tema(self):
+        preguntas = self.dao.obtener_todas()
+        conteo = Counter(p.tema for p in preguntas)
+        for tema, cantidad in conteo.items():
+            print(f"Tema: {tema} -> {cantidad} preguntas")
+        return dict(conteo)
+
+
+    def estadisticas_por_dificultad(self):
+        preguntas = self.dao.obtener_todas()
+        conteo = Counter(p.dificultad for p in preguntas)
+        for dificultad, cantidad in conteo.items():
+            print(f"Dificultad: {dificultad} -> {cantidad} preguntas")
+        return dict(conteo)
