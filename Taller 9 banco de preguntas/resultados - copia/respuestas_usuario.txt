@@ -1,0 +1,18 @@
+REPORTE DE SIMULACION
+==================================================
+Fecha inicio: 2026-08-04 23:33:01
+Fecha fin:    2026-08-04 23:33:01
+Puntaje: 3/5 (60.0%)
+==================================================
+
+[42] ¿Qué produce la expresión [x**2 for x in range(5)]?
+    Tema: Comprensión de listas | Dificultad: Media
+    Tu respuesta: C  |  Respuesta correcta: C  |  CORRECTA
+...
+==================================================
+ESTADISTICAS POR TEMA
+  Comprensión de listas: 1/1 correctas
+  ...
+ESTADISTICAS POR DIFICULTAD
+  Media: 1/1 correctas
+  ...
