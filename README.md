@@ -1,6 +1,6 @@
-# [Nombre del proyecto]
+# [En proceso]
 
-**Alumno:** [Apellido, Nombre]
+**Alumno:** [Zambrano, David]
 **Curso:** [Nombre del curso]
 **Fecha de inicio:** [dd/mm/aaaa]
 
