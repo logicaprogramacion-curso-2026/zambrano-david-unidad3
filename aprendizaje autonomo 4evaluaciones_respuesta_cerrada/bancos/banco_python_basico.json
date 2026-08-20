@@ -1,0 +1,148 @@
+{
+  "nombre_banco": "Fundamentos de Programación en Python",
+  "preguntas": [
+    {
+      "id": 101,
+      "tipo": "opcion_multiple",
+      "enunciado": "¿Cuál de las siguientes palabras clave se usa para crear una clase en Python?",
+      "opciones": ["A) class", "B) def", "C) struct", "D) object"],
+      "respuesta_correcta": "A",
+      "puntaje": 2,
+      "retroalimentacion_incorrecta": "La palabra clave 'class' se usa para definir una clase. 'def' se usa para funciones/métodos."
+    },
+    {
+      "id": 102,
+      "tipo": "opcion_multiple",
+      "enunciado": "¿Cuáles de las siguientes son colecciones mutables en Python? (selecciona todas las que correspondan)",
+      "opciones": ["A) Lista", "B) Tupla", "C) Diccionario", "D) Cadena de texto (str)"],
+      "respuesta_correcta": ["A", "C"],
+      "puntaje": 3,
+      "retroalimentacion_incorrecta": "Lista y Diccionario son mutables. Tupla y str son inmutables: no se pueden modificar tras crearse."
+    },
+    {
+      "id": 103,
+      "tipo": "verdadero_falso",
+      "enunciado": "El operador '==' compara valores, mientras que 'is' compara identidad de objetos.",
+      "respuesta_correcta": "verdadero",
+      "puntaje": 1,
+      "retroalimentacion_incorrecta": "Es verdadero: '==' compara si los valores son iguales; 'is' compara si son el mismo objeto en memoria."
+    },
+    {
+      "id": 104,
+      "tipo": "verdadero_falso",
+      "enunciado": "En Python, las listas se declaran usando paréntesis: ( ).",
+      "respuesta_correcta": "falso",
+      "puntaje": 1,
+      "retroalimentacion_incorrecta": "Es falso: las listas se declaran con corchetes [ ]. Los paréntesis se usan para tuplas."
+    },
+    {
+      "id": 105,
+      "tipo": "completar_espacios",
+      "enunciado": "El bucle ____ se ejecuta repetidamente mientras una condición sea verdadera.",
+      "respuesta_correcta": ["while"],
+      "puntaje": 1,
+      "retroalimentacion_incorrecta": "La palabra clave correcta es 'while'."
+    },
+    {
+      "id": 106,
+      "tipo": "completar_espacios",
+      "enunciado": "Para manejar excepciones en Python se usa un bloque try/____.",
+      "respuesta_correcta": ["except"],
+      "puntaje": 1,
+      "retroalimentacion_incorrecta": "La palabra clave correcta es 'except', usada junto a 'try' para capturar errores."
+    },
+    {
+      "id": 107,
+      "tipo": "emparejamiento",
+      "enunciado": "Relaciona cada tipo de dato con un ejemplo válido.",
+      "pares": [
+        {"termino": "int", "definicion": "5"},
+        {"termino": "float", "definicion": "3.14"},
+        {"termino": "str", "definicion": "'hola'"},
+        {"termino": "bool", "definicion": "True"}
+      ],
+      "puntaje": 4,
+      "retroalimentacion_incorrecta": "int son enteros (5), float son decimales (3.14), str son cadenas de texto ('hola') y bool son True/False."
+    },
+    {
+      "id": 108,
+      "tipo": "opcion_multiple",
+      "enunciado": "¿Qué función se usa para obtener la cantidad de elementos de una lista?",
+      "opciones": ["A) size()", "B) length()", "C) len()", "D) count()"],
+      "respuesta_correcta": "C",
+      "puntaje": 2,
+      "retroalimentacion_incorrecta": "La función correcta es 'len()', por ejemplo: len([1, 2, 3]) devuelve 3."
+    },
+    {
+      "id": 109,
+      "tipo": "opcion_multiple",
+      "enunciado": "¿Cuáles de las siguientes son formas válidas de definir una función en Python? (selecciona todas las que correspondan)",
+      "opciones": ["A) def mi_funcion():", "B) function mi_funcion()", "C) lambda x: x", "D) fun mi_funcion()"],
+      "respuesta_correcta": ["A", "C"],
+      "puntaje": 3,
+      "retroalimentacion_incorrecta": "'def' declara funciones normales y 'lambda' declara funciones anónimas. 'function' y 'fun' no son palabras clave de Python."
+    },
+    {
+      "id": 110,
+      "tipo": "verdadero_falso",
+      "enunciado": "Un diccionario en Python almacena información como pares clave-valor.",
+      "respuesta_correcta": "verdadero",
+      "puntaje": 1,
+      "retroalimentacion_incorrecta": "Es verdadero, por ejemplo: {'nombre': 'Ana', 'edad': 20}."
+    },
+    {
+      "id": 111,
+      "tipo": "completar_espacios",
+      "enunciado": "El método ____ agrega un elemento al final de una lista.",
+      "respuesta_correcta": ["append"],
+      "puntaje": 1,
+      "retroalimentacion_incorrecta": "El método correcto es 'append', por ejemplo: mi_lista.append(4)."
+    },
+    {
+      "id": 112,
+      "tipo": "opcion_multiple",
+      "enunciado": "¿Cuál es el resultado de la expresión 10 % 3 en Python?",
+      "opciones": ["A) 3", "B) 1", "C) 0", "D) 3.33"],
+      "respuesta_correcta": "B",
+      "puntaje": 2,
+      "retroalimentacion_incorrecta": "El operador % devuelve el residuo de la división. 10 dividido entre 3 da residuo 1."
+    },
+    {
+      "id": 113,
+      "tipo": "verdadero_falso",
+      "enunciado": "En Python, los índices de una lista comienzan en 1.",
+      "respuesta_correcta": "falso",
+      "puntaje": 1,
+      "retroalimentacion_incorrecta": "Es falso: en Python los índices comienzan en 0, así que el primer elemento es mi_lista[0]."
+    },
+    {
+      "id": 114,
+      "tipo": "emparejamiento",
+      "enunciado": "Relaciona cada módulo estándar de Python con su propósito principal.",
+      "pares": [
+        {"termino": "math", "definicion": "Funciones matemáticas"},
+        {"termino": "random", "definicion": "Generación de números aleatorios"},
+        {"termino": "datetime", "definicion": "Manejo de fechas y horas"}
+      ],
+      "puntaje": 3,
+      "retroalimentacion_incorrecta": "math trae funciones matemáticas, random genera valores aleatorios y datetime maneja fechas/horas."
+    },
+    {
+      "id": 115,
+      "tipo": "completar_espacios",
+      "enunciado": "La palabra clave ____ se usa para salir de un bucle antes de que termine su condición natural.",
+      "respuesta_correcta": ["break"],
+      "puntaje": 1,
+      "retroalimentacion_incorrecta": "La palabra clave correcta es 'break'."
+    },
+    {
+      "id": 116,
+      "tipo": "opcion_multiple",
+      "enunciado": "¿Qué estructura de control se usa para tomar decisiones en Python?",
+      "opciones": ["A) for", "B) if", "C) while", "D) def"],
+      "respuesta_correcta": "B",
+      "puntaje": 1,
+      "retroalimentacion_incorrecta": "La estructura correcta es 'if' (junto con 'elif' y 'else') para tomar decisiones."
+    }
+  ]
+}

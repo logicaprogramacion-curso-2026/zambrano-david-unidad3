@@ -1,0 +1,84 @@
+{
+  "titulo": "Examen de Prueba - Fundamentos de Programación en Python",
+  "preguntas": [
+    {
+      "id": 1,
+      "tipo": "opcion_multiple",
+      "enunciado": "¿Cuál de las siguientes es una estructura de datos en Python?",
+      "opciones": ["A) Bucle for", "B) Lista", "C) Función", "D) Comentario"],
+      "respuesta_correcta": "B",
+      "puntaje": 2,
+      "retroalimentacion_incorrecta": "Una estructura de datos organiza y almacena información. Un bucle 'for' es una estructura de control, no de datos; la respuesta correcta es 'Lista'."
+    },
+    {
+      "id": 2,
+      "tipo": "verdadero_falso",
+      "enunciado": "Python es un lenguaje de tipado estático.",
+      "respuesta_correcta": "falso",
+      "puntaje": 1,
+      "retroalimentacion_incorrecta": "Python es de tipado dinámico: el tipo de una variable se determina en tiempo de ejecución, no al declararla."
+    },
+    {
+      "id": 3,
+      "tipo": "emparejamiento",
+      "enunciado": "Relaciona cada término con su definición.",
+      "pares": [
+        {"termino": "Variable", "definicion": "Espacio en memoria para almacenar un valor"},
+        {"termino": "Función", "definicion": "Bloque de código reutilizable"},
+        {"termino": "Bucle", "definicion": "Estructura que repite instrucciones"}
+      ],
+      "puntaje": 3,
+      "retroalimentacion_incorrecta": "Revisa cada concepto: una variable almacena datos, una función agrupa lógica reutilizable y un bucle repite instrucciones."
+    },
+    {
+      "id": 4,
+      "tipo": "completar_espacios",
+      "enunciado": "En Python, la palabra clave ____ se usa para definir una función.",
+      "respuesta_correcta": ["def"],
+      "puntaje": 1,
+      "retroalimentacion_incorrecta": "La palabra clave correcta es 'def', usada para declarar funciones en Python."
+    },
+    {
+      "id": 5,
+      "tipo": "opcion_multiple",
+      "enunciado": "¿Cuál es la extensión de archivo de un script de Python?",
+      "opciones": ["A) .py", "B) .java", "C) .js", "D) .cpp"],
+      "respuesta_correcta": "A",
+      "puntaje": 2,
+      "retroalimentacion_incorrecta": "Los scripts de Python usan la extensión .py"
+    },
+    {
+      "id": 6,
+      "tipo": "verdadero_falso",
+      "enunciado": "En Python, la indentación (sangría) afecta la ejecución del código.",
+      "respuesta_correcta": "verdadero",
+      "puntaje": 1,
+      "retroalimentacion_incorrecta": "Es verdadero: Python usa la indentación para delimitar bloques de código en lugar de llaves {}."
+    },
+    {
+      "id": 7,
+      "tipo": "opcion_multiple",
+      "enunciado": "¿Cuáles de las siguientes son estructuras de datos incorporadas en Python? (selecciona todas las que correspondan)",
+      "opciones": ["A) Lista", "B) Diccionario", "C) Bucle while", "D) Tupla"],
+      "respuesta_correcta": ["A", "B", "D"],
+      "puntaje": 3,
+      "retroalimentacion_incorrecta": "Lista, Diccionario y Tupla son estructuras de datos. El bucle 'while' es una estructura de control, no de datos."
+    },
+    {
+      "id": 8,
+      "tipo": "completar_espacios",
+      "enunciado": "La función ____ se usa para conocer el tipo de un dato en Python.",
+      "respuesta_correcta": ["type"],
+      "puntaje": 1,
+      "retroalimentacion_incorrecta": "La función correcta es 'type', por ejemplo: type(5) devuelve <class 'int'>."
+    },
+    {
+      "id": 9,
+      "tipo": "verdadero_falso",
+      "enunciado": "Las tuplas en Python son mutables (se pueden modificar después de creadas).",
+      "respuesta_correcta": "falso",
+      "puntaje": 1,
+      "retroalimentacion_incorrecta": "Es falso: las tuplas son inmutables. Una vez creadas, no se pueden modificar; para eso se usan listas."
+    }
+  ]
+}
